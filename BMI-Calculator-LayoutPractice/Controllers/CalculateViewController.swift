@@ -12,8 +12,10 @@ class CalculateViewController: UIViewController {
     
     
     @IBOutlet weak var heightLabel: UILabel!
-    
     @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var heightSliderOutlet: UISlider!
+    @IBOutlet weak var weightSliderOutlet: UISlider!
+    
     
     var height : Float = 0.0
     var weight : Float = 0.0
@@ -21,7 +23,8 @@ class CalculateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        height = heightSliderOutlet.value
+        weight = weightSliderOutlet.value
     }
     
     @IBAction func heightSlider(_ sender: UISlider) {
@@ -36,6 +39,7 @@ class CalculateViewController: UIViewController {
     
     @IBAction func calculateButton(_ sender: UIButton) {
         bmi = String(format: "%.1f", weight / pow(height, 2))
+        print(height,weight,bmi)
         performSegue(withIdentifier: "goToResult", sender: self)
     }
     
@@ -46,4 +50,3 @@ class CalculateViewController: UIViewController {
         }
     }
 }
-

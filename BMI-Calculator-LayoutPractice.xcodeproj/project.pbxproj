@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27AEB5CD284FF5C20003AFAC /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AEB5CC284FF5C20003AFAC /* CalculatorBrain.swift */; };
+		27AEB5D0285004480003AFAC /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AEB5CF285004480003AFAC /* BMI.swift */; };
 		27EB8B61284ED0FD00BE59FD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB8B60284ED0FD00BE59FD /* ResultViewController.swift */; };
 		AD0B9F9F230D64B30065EFD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B9F9E230D64B30065EFD9 /* AppDelegate.swift */; };
 		AD0B9FA1230D64B30065EFD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0B9FA0230D64B30065EFD9 /* SceneDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27AEB5CC284FF5C20003AFAC /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculatorBrain.swift; path = "BMI-Calculator-LayoutPractice/Model/CalculatorBrain.swift"; sourceTree = SOURCE_ROOT; };
+		27AEB5CF285004480003AFAC /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 		27EB8B60284ED0FD00BE59FD /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		AD0B9F9B230D64B30065EFD9 /* BMI-Calculator-LayoutPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI-Calculator-LayoutPractice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0B9F9E230D64B30065EFD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27AEB5CE284FF94F0003AFAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27AEB5CC284FF5C20003AFAC /* CalculatorBrain.swift */,
+				27AEB5CF285004480003AFAC /* BMI.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AD0B9F92230D64B30065EFD9 = {
 			isa = PBXGroup;
 			children = (
@@ -63,7 +76,7 @@
 			children = (
 				AD0B9F9E230D64B30065EFD9 /* AppDelegate.swift */,
 				AD0B9FA0230D64B30065EFD9 /* SceneDelegate.swift */,
-				AD0B9FB4230D64F70065EFD9 /* Models */,
+				27AEB5CE284FF94F0003AFAC /* Model */,
 				AD0B9FB2230D64E70065EFD9 /* Views */,
 				AD0B9FB3230D64F00065EFD9 /* Controllers */,
 				AD0B9FA7230D64B50065EFD9 /* Assets.xcassets */,
@@ -88,13 +101,6 @@
 				27EB8B60284ED0FD00BE59FD /* ResultViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		AD0B9FB4230D64F70065EFD9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +178,8 @@
 				AD0B9FA3230D64B30065EFD9 /* CalculateViewController.swift in Sources */,
 				AD0B9F9F230D64B30065EFD9 /* AppDelegate.swift in Sources */,
 				AD0B9FA1230D64B30065EFD9 /* SceneDelegate.swift in Sources */,
+				27AEB5CD284FF5C20003AFAC /* CalculatorBrain.swift in Sources */,
+				27AEB5D0285004480003AFAC /* BMI.swift in Sources */,
 				27EB8B61284ED0FD00BE59FD /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,14 +326,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "BMI-Calculator-LayoutPractice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.appbrewery.BMI-Calculator-LayoutPractice";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.lcardoso.BMI-Calculator-LayoutPractice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,14 +346,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "BMI-Calculator-LayoutPractice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "co.appbrewery.BMI-Calculator-LayoutPractice";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.lcardoso.BMI-Calculator-LayoutPractice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
